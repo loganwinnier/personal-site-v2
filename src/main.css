@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* Nav bar */
+    .nav-link {
+        @apply mx-8 font-accent text-lg text-text-dark opacity-100
+    }
+
+    /* Hero  */
+    .hero-link {
+        @apply font-accent text-3xl
+    }
+
+    /* Main Website sections and Titles shared */
+    .section-title {
+        @apply font-title text-9xl
+    }
+
+    .web-section {
+        @apply w-full h-dvh
+    }
+
+    .web-section-A {
+        @apply web-section bg-primary-light text-text-dark
+    }
+
+    .web-section-B {
+        @apply web-section bg-primary-light-acc text-text-dark 
+        drop-shadow-[5px_5px_10px_#dcdcdc]
+    }
+
+    /* Work */
+    .card {
+        @apply bg-primary-light text-center py-4 max-w-96 flex flex-col 
+        items-center justify-evenly gap-8 border-2 border-text-dark rounded-md
+    }
+
+    .btn-primary {
+        @apply bg-primary-light rounded-md text-3xl border-2 border-text-dark
+        px-3 py-1
+    }
+
+    /* Form */
+    .form {
+        @apply grid grid-rows-4 grid-cols-4 gap-2 mt-8 place-self-center
+    }
+
+    .field-small {
+        @apply row-span-1 col-span-2 p-2 w-full h-10 rounded-lg border-2
+        border-text-dark placeholder-text-dark placeholder:font-accent font-semibold text-lg
+    }
+
+    .field-large {
+        @apply col-span-4 row-span-3 p-2 w-full h-56 rounded-lg border-2 resize-none
+         border-text-dark placeholder-text-dark placeholder:font-accent font-semibold
+         text-lg
+    }
+
+    .connect-link {
+        @apply text-3xl font-title 
+    }
+}

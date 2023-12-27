@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./src/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logan Winnie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  </head>
+  <body class="flex flex-col justify-start items-center bg-primary-light">
+    <div id="nav-bar" class="flex justify-between items-center gap-16 sticky top-4
+     bg-light-opacity-30 -mt-16 py-4 px-12 drop-shadow-xl z-20">
+      <a href="#hero" class="nav-link"><img src="" alt="Logo"></a>
+      <nav class="">
+        <a href="#about" class="nav-link">About me</a>
+        <a href="#works" class="nav-link">Works</a>
+        <a href="#contact" class="nav-link">Contact me</a>
+      </nav>
+      <div>
+        <a href="" class="connect-link">
+            <i class="bi bi-github mr-2 text-2xl"></i>
+          </a>
+          <a href="" class="connect-link">
+            <i class="bi bi-linkedin mr-2 text-2xl"></i>
+          </a>
+      </div>
+    </div>
+
+
+    <div id="hero" class="web-section-B -top-8 flex justify-between px-32 pt-32">
+      <div id="hero-left" class="mt-24">
+        <h1 class="section-title">My name is Logan,</h1>
+        <h1 class="section-title">I'm a Software Engineer</h1>
+        <nav id="hero-nav" class="flex flex-col gap-6 mt-4">
+          <a class="hero-link" href="#about">About me</a>
+          <a class="hero-link" href="#works">Works</a>
+          <a class="hero-link" href="#contact">Contact me</a>
+        </nav>
+      </div>
+
+      <div id="hero-right" class="flex items-start justify-center mx-auto my-24">
+        <div id="hero-image" class="bg-slate-500 px-80 py-80 rounded-3xl">
+          <img src="" alt="Hero Image">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="about" class="web-section-A flex justify-between pl-16 pt-32">
+      <div id="about-left" class="mt-12 ml-16">
+        <h1 class="section-title">About me</h1>
+        <p class="font-accent text-wrap max-w-prose text-lg">
+          Software Engineer who recently finished Rithm School's full stack
+          development program. Originally graduating with a degree in Psychology from 
+          Boston University, shifting to field of Software engineering. Working in a trauma-informed 
+          therapeutic school, excelling at cooperation with colleagues as well as creative and decisive decision making in tense situations. Since the switch of careers creating full-stack applications
+          using but not limited to Python, Javascript, React, and Postgres. Including authentication, Amazon 
+          S3 integration, and end to end testing.
+        </p>
+        <img src="" alt="Logan running">
+      </div>
+
+      <div id="about-right" class="flex items-start justify-center mx-52 my-16">
+        <div id="about-image" class="bg-slate-500 px-80 py-80 rounded-3xl">
+          <img src="" alt="about Image">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="works" class="web-section-B">
+      <h1 class="section-title mt-32 ml-32 mb-20">Works</h1>
+      <div class="flex justify-around">
+        <div class="card px-4">
+          <h3 class="project-name">Jobly</h3>
+          <img src="./public/placeholder.jpg" alt="Card Image">
+          <p class="font-accent w-80 text-wrap">A job board application with authentication  <br><br></p>
+          <button class="btn-primary">Details</button>
+        </div>
+        <div class="card px-4">
+          <h3 class="project-name">+One</h3>
+          <img src="./public/placeholder.jpg" alt="Card Image">
+          <p class="font-accent w-80 text-wrap">A social app with authentication similar to tinder for matching people with events</p>
+          <button class="btn-primary">Details</button>
+        </div>
+        <div class="card px-4">
+          <h3 class="project-name">Saugerties Self Storage</h3>
+          <img src="./public/placeholder.jpg" alt="Card Image">
+          <p class="font-accent w-80 text-wrap">A live site for local  storage company 
+            <br> &#8205; 
+            <br>&#8205; 
+          </p>
+          <button class="btn-primary">Details</button>
+        </div>
+      </div>
+      <img src="" alt="Logan viewing">
+    </div>
+
+    
+    <div id="contact" class="-ml-16 web-section-A flex justify-around">
+      <div id="connect-left" class="mt-32">
+        <h1 class="section-title">Contact me</h1>
+        <form action="" class="form">
+          <input type="text" class="field-small" placeholder="Name">
+          <input type="email" class="field-small" placeholder="Email">
+          <textarea type="text" class="field-large" placeholder="message"></textarea>
+          <button type="button" class="btn-primary row-span-1 col-span-1 
+            col-start-4 border-4 border-text-dark font-semibold
+            p-1 font-accent">Send</button>
+        </form>
+        <img src="" alt="Logan Calling">
+      </div>
+
+      <div id="connect-right" class="pr-24 mt-60">
+        <h1 class="section-title">Connect</h1>
+        <div class="flex flex-col gap-8 ml-8 mt-8 items-start">
+          <a href="" class="connect-link">
+            <i class="bi bi-github mr-2 text-3xl"></i>Github
+          </a>
+          <a href="" class="connect-link">
+            <i class="bi bi-linkedin mr-2 text-3xl"></i> Linked-in
+          </a>
+          <a href="" class="connect-link">
+            <i class="bi bi-envelope-fill mr-2 text-3xl"></i>  Loganwinnier@gmail.com 
+          </a>
+          <button class="btn-primary border-4 border-text-dark font-semibold 
+          py-1.5 px-3 font-accent">Resume</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
