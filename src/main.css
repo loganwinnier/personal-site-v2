@@ -43,13 +43,13 @@
 
   /* Work */
   .card {
-    @apply flex max-w-96 flex-col items-center justify-evenly gap-8 
+    @apply grid grid-cols-5 place-items-center
         rounded-md border-2 border-secondary-dark bg-primary-light py-4 text-center
         drop-shadow-2xl;
   }
 
   .project-name {
-    @apply text-2xl font-bold;
+    @apply col-span-1 text-2xl font-bold;
   }
 
   .btn-primary {
