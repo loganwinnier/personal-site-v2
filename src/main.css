@@ -3,62 +3,77 @@
 @tailwind utilities;
 
 @layer components {
-    /* Nav bar */
-    .nav-link {
-        @apply mx-8 font-accent text-lg text-text-dark opacity-100
-    }
+  /* Nav bar */
+  .nav-link {
+    @apply mx-8 font-accent text-lg font-medium text-secondary-dark 
+        opacity-100 transition-all duration-150 
+        ease-in-out hover:font-bold hover:underline;
+  }
 
-    /* Hero  */
-    .hero-link {
-        @apply font-accent text-3xl
-    }
+  /* Hero  */
+  .hero-link {
+    @apply font-accent text-3xl font-medium transition-all delay-100 
+        ease-in-out hover:font-bold hover:underline;
+  }
 
-    /* Main Website sections and Titles shared */
-    .section-title {
-        @apply font-title text-9xl
-    }
+  /* Main Website sections and Titles shared */
+  .section-title {
+    @apply font-title text-8xl;
+  }
 
-    .web-section {
-        @apply w-full h-dvh
-    }
+  .section-title-outline {
+    @apply font-title text-8xl text-transparent;
+    -webkit-text-stroke: 5px #333333;
+  }
 
-    .web-section-A {
-        @apply web-section bg-primary-light text-text-dark
-    }
+  .web-section {
+    @apply h-dvh w-full;
+  }
 
-    .web-section-B {
-        @apply web-section bg-primary-light-acc text-text-dark 
-        drop-shadow-[5px_5px_10px_#dcdcdc]
-    }
+  .web-section-A {
+    @apply web-section bg-primary-light text-secondary-dark;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
 
-    /* Work */
-    .card {
-        @apply bg-primary-light text-center py-4 max-w-96 flex flex-col 
-        items-center justify-evenly gap-8 border-2 border-text-dark rounded-md
-    }
+  .web-section-B {
+    @apply web-section bg-primary-light-acc text-secondary-dark 
+        drop-shadow-[5px_5px_10px_#dcdcdc];
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.15' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  }
 
-    .btn-primary {
-        @apply bg-primary-light rounded-md text-3xl border-2 border-text-dark
-        px-3 py-1
-    }
+  /* Work */
+  .card {
+    @apply flex max-w-96 flex-col items-center justify-evenly gap-8 
+        rounded-md border-2 border-secondary-dark bg-primary-light py-4 text-center
+        drop-shadow-2xl;
+  }
 
-    /* Form */
-    .form {
-        @apply grid grid-rows-4 grid-cols-4 gap-2 mt-8 place-self-center
-    }
+  .project-name {
+    @apply text-2xl font-bold;
+  }
 
-    .field-small {
-        @apply row-span-1 col-span-2 p-2 w-full h-10 rounded-lg border-2
-        border-text-dark placeholder-text-dark placeholder:font-accent font-semibold text-lg
-    }
+  .btn-primary {
+    @apply rounded-md border-2 border-secondary-dark bg-secondary-light-acc px-3
+        py-1 text-3xl hover:rotate-3 hover:bg-secondary-light-2 hover:drop-shadow-2xl;
+  }
 
-    .field-large {
-        @apply col-span-4 row-span-3 p-2 w-full h-56 rounded-lg border-2 resize-none
-         border-text-dark placeholder-text-dark placeholder:font-accent font-semibold
-         text-lg
-    }
+  /* Form */
+  .form {
+    @apply mt-8 grid grid-cols-4 grid-rows-4 gap-2 place-self-center;
+  }
 
-    .connect-link {
-        @apply text-3xl font-title 
-    }
+  .field-small {
+    @apply col-span-2 row-span-1 h-10 w-full rounded-lg border-2 border-secondary-dark
+        p-2 text-lg font-semibold placeholder-secondary-dark placeholder:font-accent;
+  }
+
+  .field-large {
+    @apply col-span-4 row-span-3 h-56 w-full resize-none rounded-lg border-2 border-secondary-dark
+         p-2 text-lg font-semibold placeholder-secondary-dark
+         placeholder:font-accent;
+  }
+
+  .connect-link {
+    @apply font-title text-3xl hover:font-semibold;
+  }
 }

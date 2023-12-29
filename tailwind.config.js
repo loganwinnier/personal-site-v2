@@ -11,17 +11,23 @@ export default {
       colors: {
         'primary': {
           'light': '#FDF8F7',
-          'light-acc': '#FFDD71',
+          'light-acc': '#ffe171',
           'dark': '#005249',
-          'dark-acc': '#005249'
+          'dark-acc': '#00755e'
         },
-        'text': {
+        'secondary': {
           'light': '#F4F4F4',
-          'dark': '#333333'
+          'light-2': '#EDEDED',
+          'light-acc': '#ffcb91',
+          'dark': '#333333',
+          'dark-dark': '#2B2B2B',
+          'dark-light': '#575757'
         },
         'light-opacity': {
           '30': '#F4F4F4C2'
         }
+
+
       },
       fontFamily: {
         'title': ['"Lilita One"', ...defaultTheme.fontFamily.sans],
